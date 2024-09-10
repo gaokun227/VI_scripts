@@ -1,7 +1,7 @@
 #!/bin/tcsh 
 module load python/3.9
 
-# This script drives the VI-related workflow for the RT2023 T-SHiELD on Jet
+# This script drives the VI-related workflow for the RT T-SHiELD
 # It is triggerd by the IC creation script once ICs are generated
 
 # If there are storms that need VI, this script will:
