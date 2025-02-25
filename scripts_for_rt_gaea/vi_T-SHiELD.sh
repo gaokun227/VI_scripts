@@ -80,8 +80,8 @@ do
   export EXEChafs=${HOMEhafs}/sorc/hafs_tools.fd/${exec}/
   export FIXhafs=${HOMEhafs}/fix
 
-  export APRUNC="srun --ntasks=8"
-  export APRUNC1="srun --ntasks=1"
+  export APRUNC="srun --ntasks=8 --export=ALL"
+  export APRUNC1="srun --ntasks=1 --export=ALL"
   export DATOOL=${EXEChafs}/hafs_datool.x
 
   # -- activating or deactivating certain steps
@@ -102,8 +102,6 @@ do
 
   set +x
   source ${USHhafs}/hafs_pre_job.sh.inc > /dev/null 2>&1
-  module use ${HOMEhafs}/modulefiles > /dev/null 2>&1
-  module load modulefile.hafs.jet > /dev/null 2>&1
   module list
   set -x
 

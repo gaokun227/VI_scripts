@@ -45,7 +45,7 @@ except getopt.GetoptError:
 # --- hardcoded paramters below
 filter_domain = 10. # vi input domain size in deg
 res = 1/33. # model res
-min_dist_dom = 0.1 # min distance of the selected box corners from the nested domain edges
+min_dist_dom = 0.5 #0.1 # min distance of the selected box corners from the nested domain edges
 grid_file = ic_base + '/GRID/grid_spec.nest02.tile7.nc' # grid file for T-SHiELD
 
 # --- Main program begins
