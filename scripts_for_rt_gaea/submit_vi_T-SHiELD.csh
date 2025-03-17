@@ -1,16 +1,44 @@
 #!/bin/tcsh
+# =================================================
+# ${HOME}/NGGPS/VI/VI_scripts/scripts_for_rt_gaea/submit_vi_T-SHiELD.csh
+#   --- Created by Kun Gao and maintained by Matt Morin (UCAR/GFDL)
+#   --- This script drives the VI-related workflow for the RT T-SHiELD
+#       It is triggerd by the IC creation script once ICs are generated
+#       If there are storms that need VI, this script will:
+#        - create two TC text files to be used by VI
+#        - launch the VI script
+#
+# USAGE:
+#   --- ./submit_vi_T-SHiELD.csh ${YMDH}
+#
+# INPUT:
+#   --- /gpfs/f5/gfdl_w/scratch/Matthew.Morin/NGGPS/vitals/syndat_tcvitals.${YYYY}
+#       ${ic_base}/gfs_data.tile7.nc
+#
+# OUTPUT:
+#   --- tc_vitals/observed_all/tcvitals_${YMDH}.txt
+#       tc_vitals/processed/${YMDH}/${STORMID}/tcvitals.vi
+#       tc_vitals/processed/${YMDH}/${STORMID}/${STORMID}.${YMDH}.trak.atcfunix.all
+#       ${ic_base}/gfs_data.tile7_vi_?.nc
+#
+# NOTES:
+#   ---
+#
+# TODO:
+#   ---
+#
+# UPDATES:
+#   [2025MAR17] Added documentation header; Added notify_error function
+# =================================================
+
+# Define an alias that sends all given arguments ($!:*) as the error message
+alias notify_error 'echo "\!:*" | mail -s "Error in submit_vi_T-SHiELD.csh" matthew.morin@noaa.gov'
+
 module load python/3.9
 
 set echo
 set verbose
 unlimit
-
-# This script drives the VI-related workflow for the RT T-SHiELD
-# It is triggerd by the IC creation script once ICs are generated
-
-# If there are storms that need VI, this script will:
-#  - create two TC text files to be used by VI
-#  - launch the VI script
 
 # === get the model initialization date&time from command-line argument
 set CDATE = $1
@@ -29,7 +57,6 @@ cd ${vi_base} || exit 1
 
 # ic files
 set GRID = 'C768r10n4_atl_new'
-#set ic_base = /gpfs/f5/gfdl_w/scratch/${USER}/SHiELD_INPUT/SHiELD_IC_v16/${GRID}/
 set ic_base = /gpfs/f5/gfdl_w/proj-shared/${USER}/SHiELD_INPUT_DATA/variable.v202311/${GRID}/
 
 # vi criteria (will be passed to python scripts that generated TC files)
@@ -103,7 +130,12 @@ if ( -e $vitfiles[1] ) then
   if ( ! -e $ic_dst_file[1] ) then
     echo "VILOG: Submitting ${CDATE}, ${STORMIDlist}"
     sbatch --job-name=vi_dev_ic_${GRID}_${CDATE} --output=${ic_dir}/%x.out --export=NONE,CDATE=${CDATE},STORMIDlist="${STORMIDlist}" --qos ${USRDEF_QOS} ${vi_script}
+    if ( ${status} != 0 ) then
+      notify_error "Error launching vi_dev_ic_${GRID}_${CDATE} batch job"
+      exit 1
+    endif
   else
+    notify_error "Error: vi_dev_ic_${GRID}_${CDATE} not launched because $ic_dst_file[1] is not available"
     exit 1
   endif
 
