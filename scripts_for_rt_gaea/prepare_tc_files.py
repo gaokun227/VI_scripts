@@ -45,7 +45,7 @@ except getopt.GetoptError:
 # --- hardcoded paramters below
 filter_domain = 10. # vi input domain size in deg
 res = 1/33. # model res
-min_dist_dom = 0.1 # min distance of the selected box corners from the nested domain edges 
+min_dist_dom = 0.5 # min distance of the selected box corners from the nested domain edges 
 grid_file = ic_base + '/INPUT/grid_spec.nest02.tile7.nc' # grid file for T-SHiELD
 
 # --- Main program begins
@@ -89,17 +89,23 @@ if True:
 
       if tc_vmax >=min_wind and tc_lat <=max_lat:
 
+         print ("level 1 check passed")
+
          de1,dw1,ds1,dn1 = find_min_dist_tc_center_and_domain_edges(360-lon_p1, lat_p1, grid_lont, grid_latt)
          de2,dw2,ds2,dn2 = find_min_dist_tc_center_and_domain_edges(360-lon_p2, lat_p2, grid_lont, grid_latt)
          de3,dw3,ds3,dn3 = find_min_dist_tc_center_and_domain_edges(360-lon_p3, lat_p3, grid_lont, grid_latt)
          de4,dw4,ds4,dn4 = find_min_dist_tc_center_and_domain_edges(360-lon_p4, lat_p4, grid_lont, grid_latt)
 
+         print ("level 2 check:")
+         print (min_index_dom, min(de1,dw1,ds1,dn1), min(de2,dw2,ds2,dn2), min(de3,dw3,ds3,dn3), min(de4,dw4,ds4,dn4))
+         
          if  min(de1,dw1,ds1,dn1) > min_index_dom \
          and min(de2,dw2,ds2,dn2) > min_index_dom \
          and min(de3,dw3,ds3,dn3) > min_index_dom \
          and min(de4,dw4,ds4,dn4) > min_index_dom: 
 
            find_good_tc = True
+           print ("level 2 check passed")
 
       # stop looping all TCs at this initialization time
       if find_good_tc:
@@ -107,8 +113,8 @@ if True:
 
     if find_good_tc:
       stormID = tc_id[2:]
-
-      #print 'STORMID, OBS VMAX:', stormID, tc_vmax
+      print ("Info of the storm to undergo VI")
+      print ("storm_id, vmax:", stormID, tc_vmax)
 
       # detect TC in IC - location of min pres
       #print 'Obs lat, lon:', tc_lat, tc_lon

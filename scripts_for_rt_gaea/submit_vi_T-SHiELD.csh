@@ -68,8 +68,11 @@ if ( ! -f ${vital_dir_processed}/${CDATE}/tcvitals.vi ) then
 # -o: vital_dir_out -> where processed tc txt files are saved, e.g., vital_base+'/processed/'
 
   if ( -f ${obs_vital} && -f ${ic_src_file} ) then
+     echo "calling prepare_tc_files.py"
      # note the wind and lat criteria are duplicated in script below
      ${vi_driver_dir}/prepare_tc_files.py -d ${CDATE} -w $min_wind -l $max_lat -i $ic_base -f $obs_vital -o $vital_dir_processed
+  else
+     echo "checking", ${ic_src_file}, ${obs_vital}
   endif
 
 endif

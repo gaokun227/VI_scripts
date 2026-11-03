@@ -1,0 +1,86 @@
++ ulimit
+unlimited
++ export version=v2.5
++ version=v2.5
++ export exec=exec_v2.5
++ exec=exec_v2.5
++ export zind_str=29
++ zind_str=29
++ export deg_box1=10
++ deg_box1=10
++ export deg_box2=10
++ deg_box2=10
++ export res_box1=0.02
++ res_box1=0.02
++ export res_box2=0.20
++ res_box2=0.20
++ export nest_grids=0
++ nest_grids=0
++ export basin=AL
++ basin=AL
++ export initopt=0
++ initopt=0
++ export gfs_flag=0
++ gfs_flag=0
++ export gesfhr=6
++ gesfhr=6
++ export ibgs=2
++ ibgs=2
++ export iflag_cold=1
++ iflag_cold=1
++ export HOMEhafs=/autofs/ncrc-svm1_home1/Kun.Gao/VI/HAFS_tools/
++ HOMEhafs=/autofs/ncrc-svm1_home1/Kun.Gao/VI/HAFS_tools/
++ export ic_base_dir=/gpfs/f5/gfdl_w/scratch/Kun.Gao/SHiELD_INPUT/SHiELD_IC_v16/C768r10n4_atl_new/
++ ic_base_dir=/gpfs/f5/gfdl_w/scratch/Kun.Gao/SHiELD_INPUT/SHiELD_IC_v16/C768r10n4_atl_new/
++ export vital_dir=/autofs/ncrc-svm1_home1/Kun.Gao/VI/vi_scripts/scripts_for_rt_gaea/tc_vitals/processed/
++ vital_dir=/autofs/ncrc-svm1_home1/Kun.Gao/VI/vi_scripts/scripts_for_rt_gaea/tc_vitals/processed/
++ export work_dir_base=/gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work/
++ work_dir_base=/gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work/
++ export grid_dir=/gpfs/f5/gfdl_w/scratch/Kun.Gao/SHiELD_INPUT/SHiELD_IC_v16/C768r10n4_atl_new//INPUT/
++ grid_dir=/gpfs/f5/gfdl_w/scratch/Kun.Gao/SHiELD_INPUT/SHiELD_IC_v16/C768r10n4_atl_new//INPUT/
++ export ic_dir_src=/gpfs/f5/gfdl_w/scratch/Kun.Gao/SHiELD_INPUT/SHiELD_IC_v16/C768r10n4_atl_new//20220920.00Z_IC/
++ ic_dir_src=/gpfs/f5/gfdl_w/scratch/Kun.Gao/SHiELD_INPUT/SHiELD_IC_v16/C768r10n4_atl_new//20220920.00Z_IC/
++ export ic_dir_dst=/gpfs/f5/gfdl_w/scratch/Kun.Gao/SHiELD_INPUT/SHiELD_IC_v16/C768r10n4_atl_new//20220920.00Z_IC/
++ ic_dir_dst=/gpfs/f5/gfdl_w/scratch/Kun.Gao/SHiELD_INPUT/SHiELD_IC_v16/C768r10n4_atl_new//20220920.00Z_IC/
++ export ic_file_ori=/gpfs/f5/gfdl_w/scratch/Kun.Gao/SHiELD_INPUT/SHiELD_IC_v16/C768r10n4_atl_new//20220920.00Z_IC//gfs_data.tile7.nc
++ ic_file_ori=/gpfs/f5/gfdl_w/scratch/Kun.Gao/SHiELD_INPUT/SHiELD_IC_v16/C768r10n4_atl_new//20220920.00Z_IC//gfs_data.tile7.nc
++ export ic_file_dst=/gpfs/f5/gfdl_w/scratch/Kun.Gao/SHiELD_INPUT/SHiELD_IC_v16/C768r10n4_atl_new//20220920.00Z_IC//gfs_data.tile7_vi_v2.5.nc
++ ic_file_dst=/gpfs/f5/gfdl_w/scratch/Kun.Gao/SHiELD_INPUT/SHiELD_IC_v16/C768r10n4_atl_new//20220920.00Z_IC//gfs_data.tile7_vi_v2.5.nc
++ export work_dir=/gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2022092000/07L
++ work_dir=/gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2022092000/07L
++ export work_dir_ic=/gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2022092000/07L/data/ic/
++ work_dir_ic=/gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2022092000/07L/data/ic/
++ export work_dir_vital=/gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2022092000/07L/data/vital/
++ work_dir_vital=/gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2022092000/07L/data/vital/
++ export work_dir_vi=/gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2022092000/07L/atm_vi/
++ work_dir_vi=/gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2022092000/07L/atm_vi/
++ export USHhafs=/autofs/ncrc-svm1_home1/Kun.Gao/VI/HAFS_tools//ush
++ USHhafs=/autofs/ncrc-svm1_home1/Kun.Gao/VI/HAFS_tools//ush
++ export EXEChafs=/autofs/ncrc-svm1_home1/Kun.Gao/VI/HAFS_tools//sorc/hafs_tools.fd/exec_v2.5/
++ EXEChafs=/autofs/ncrc-svm1_home1/Kun.Gao/VI/HAFS_tools//sorc/hafs_tools.fd/exec_v2.5/
++ export FIXhafs=/autofs/ncrc-svm1_home1/Kun.Gao/VI/HAFS_tools//fix
++ FIXhafs=/autofs/ncrc-svm1_home1/Kun.Gao/VI/HAFS_tools//fix
++ export 'APRUNC=srun --ntasks=8'
++ APRUNC='srun --ntasks=8'
++ export 'APRUNC1=srun --ntasks=1'
++ APRUNC1='srun --ntasks=1'
++ export DATOOL=/autofs/ncrc-svm1_home1/Kun.Gao/VI/HAFS_tools//sorc/hafs_tools.fd/exec_v2.5//hafs_datool.x
++ DATOOL=/autofs/ncrc-svm1_home1/Kun.Gao/VI/HAFS_tools//sorc/hafs_tools.fd/exec_v2.5//hafs_datool.x
++ export do_pre=1
++ do_pre=1
++ export do_split=1
++ do_split=1
++ export do_pert=1
++ do_pert=1
++ export do_combine=1
++ do_combine=1
++ export do_enhance=1
++ do_enhance=1
++ export do_post=1
++ do_post=1
++ rm -rf /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2022092000/07L
++ mkdir -p /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2022092000/07L
++ mkdir -p /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2022092000/07L/data/ic/
++ mkdir -p /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2022092000/07L/data/vital/
++ mkdir -p /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2022092000/07L/atm_vi/
++ source /autofs/ncrc-svm1_home1/Kun.Gao/VI/HAFS_tools//ush/hafs_pre_job.sh.inc

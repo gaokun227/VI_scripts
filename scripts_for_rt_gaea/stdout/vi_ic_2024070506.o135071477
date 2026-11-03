@@ -1,0 +1,534 @@
++ ulimit
+unlimited
++ source /opt/intel/oneapi/setvars.sh
++ export version=v2.5
++ version=v2.5
++ export exec=exec_v2.5
++ exec=exec_v2.5
++ export HOMEhafs=/autofs/ncrc-svm1_home1/Kun.Gao/VI/HAFS_tools/
++ HOMEhafs=/autofs/ncrc-svm1_home1/Kun.Gao/VI/HAFS_tools/
++ export ic_base_dir=/gpfs/f5/gfdl_w/scratch/Kun.Gao/SHiELD_INPUT/SHiELD_IC_v16/C768r10n4_atl_new/
++ ic_base_dir=/gpfs/f5/gfdl_w/scratch/Kun.Gao/SHiELD_INPUT/SHiELD_IC_v16/C768r10n4_atl_new/
++ export vital_base_dir=/autofs/ncrc-svm1_home1/Kun.Gao/VI/VI_scripts/scripts_for_rt_gaea/tc_vitals/processed/
++ vital_base_dir=/autofs/ncrc-svm1_home1/Kun.Gao/VI/VI_scripts/scripts_for_rt_gaea/tc_vitals/processed/
++ export work_base_dir=/gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work/
++ work_base_dir=/gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work/
++ export zind_str=29
++ zind_str=29
++ export deg_box1=10
++ deg_box1=10
++ export deg_box2=10
++ deg_box2=10
++ export res_box1=0.02
++ res_box1=0.02
++ export res_box2=0.20
++ res_box2=0.20
++ export nest_grids=0
++ nest_grids=0
++ export basin=AL
++ basin=AL
++ export initopt=0
++ initopt=0
++ export gfs_flag=0
++ gfs_flag=0
++ export gesfhr=6
++ gesfhr=6
++ export ibgs=2
++ ibgs=2
++ export iflag_cold=1
++ iflag_cold=1
++ export grid_dir=/gpfs/f5/gfdl_w/scratch/Kun.Gao/SHiELD_INPUT/SHiELD_IC_v16/C768r10n4_atl_new//INPUT/
++ grid_dir=/gpfs/f5/gfdl_w/scratch/Kun.Gao/SHiELD_INPUT/SHiELD_IC_v16/C768r10n4_atl_new//INPUT/
++ export ic_dir_src=/gpfs/f5/gfdl_w/scratch/Kun.Gao/SHiELD_INPUT/SHiELD_IC_v16/C768r10n4_atl_new//20240705.06Z_IC/
++ ic_dir_src=/gpfs/f5/gfdl_w/scratch/Kun.Gao/SHiELD_INPUT/SHiELD_IC_v16/C768r10n4_atl_new//20240705.06Z_IC/
++ export ic_dir_dst=/gpfs/f5/gfdl_w/scratch/Kun.Gao/SHiELD_INPUT/SHiELD_IC_v16/C768r10n4_atl_new//20240705.06Z_IC/
++ ic_dir_dst=/gpfs/f5/gfdl_w/scratch/Kun.Gao/SHiELD_INPUT/SHiELD_IC_v16/C768r10n4_atl_new//20240705.06Z_IC/
++ export ic_file_ori=/gpfs/f5/gfdl_w/scratch/Kun.Gao/SHiELD_INPUT/SHiELD_IC_v16/C768r10n4_atl_new//20240705.06Z_IC//gfs_data.tile7.nc
++ ic_file_ori=/gpfs/f5/gfdl_w/scratch/Kun.Gao/SHiELD_INPUT/SHiELD_IC_v16/C768r10n4_atl_new//20240705.06Z_IC//gfs_data.tile7.nc
++ export ic_file_dst=/gpfs/f5/gfdl_w/scratch/Kun.Gao/SHiELD_INPUT/SHiELD_IC_v16/C768r10n4_atl_new//20240705.06Z_IC//gfs_data.tile7_vi_v2.5.nc
++ ic_file_dst=/gpfs/f5/gfdl_w/scratch/Kun.Gao/SHiELD_INPUT/SHiELD_IC_v16/C768r10n4_atl_new//20240705.06Z_IC//gfs_data.tile7_vi_v2.5.nc
++ export work_dir=/gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L
++ work_dir=/gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L
++ export work_dir_ic=/gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/data/ic/
++ work_dir_ic=/gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/data/ic/
++ export work_dir_vital=/gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/data/vital/
++ work_dir_vital=/gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/data/vital/
++ export work_dir_vi=/gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/atm_vi/
++ work_dir_vi=/gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/atm_vi/
++ export USHhafs=/autofs/ncrc-svm1_home1/Kun.Gao/VI/HAFS_tools//ush
++ USHhafs=/autofs/ncrc-svm1_home1/Kun.Gao/VI/HAFS_tools//ush
++ export EXEChafs=/autofs/ncrc-svm1_home1/Kun.Gao/VI/HAFS_tools//sorc/hafs_tools.fd/exec_v2.5/
++ EXEChafs=/autofs/ncrc-svm1_home1/Kun.Gao/VI/HAFS_tools//sorc/hafs_tools.fd/exec_v2.5/
++ export FIXhafs=/autofs/ncrc-svm1_home1/Kun.Gao/VI/HAFS_tools//fix
++ FIXhafs=/autofs/ncrc-svm1_home1/Kun.Gao/VI/HAFS_tools//fix
++ export 'APRUNC=srun --ntasks=8'
++ APRUNC='srun --ntasks=8'
++ export 'APRUNC1=srun --ntasks=1'
++ APRUNC1='srun --ntasks=1'
++ export DATOOL=/autofs/ncrc-svm1_home1/Kun.Gao/VI/HAFS_tools//sorc/hafs_tools.fd/exec_v2.5//hafs_datool.x
++ DATOOL=/autofs/ncrc-svm1_home1/Kun.Gao/VI/HAFS_tools//sorc/hafs_tools.fd/exec_v2.5//hafs_datool.x
++ export do_pre=1
++ do_pre=1
++ export do_split=1
++ do_split=1
++ export do_pert=1
++ do_pert=1
++ export do_combine=1
++ do_combine=1
++ export do_enhance=1
++ do_enhance=1
++ export do_post=1
++ do_post=1
++ rm -rf /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L
++ mkdir -p /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L
++ mkdir -p /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/data/ic/
++ mkdir -p /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/data/vital/
++ mkdir -p /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/atm_vi/
++ source /autofs/ncrc-svm1_home1/Kun.Gao/VI/HAFS_tools//ush/hafs_pre_job.sh.inc
++ module use /autofs/ncrc-svm1_home1/Kun.Gao/VI/HAFS_tools//modulefiles
++ module load modulefile.hafs.jet
++ cp /autofs/ncrc-svm1_home1/Kun.Gao/VI/VI_scripts/scripts_for_rt_gaea/tc_vitals/processed//2024070506/tcvitals.vi /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/data/vital//
++ cp /autofs/ncrc-svm1_home1/Kun.Gao/VI/VI_scripts/scripts_for_rt_gaea/tc_vitals/processed//2024070506/02L.2024070506.trak.atcfunix.all /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/data/vital//
++ ln -sf /gpfs/f5/gfdl_w/scratch/Kun.Gao/SHiELD_INPUT/SHiELD_IC_v16/C768r10n4_atl_new//INPUT//grid_spec.nest02.tile7.nc /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/data/ic//grid_spec.nc
++ ln -sf /gpfs/f5/gfdl_w/scratch/Kun.Gao/SHiELD_INPUT/SHiELD_IC_v16/C768r10n4_atl_new//20240705.06Z_IC//gfs_ctrl.nc /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/data/ic//gfs_ctrl.nc
++ ln -sf /gpfs/f5/gfdl_w/scratch/Kun.Gao/SHiELD_INPUT/SHiELD_IC_v16/C768r10n4_atl_new//20240705.06Z_IC//sfc_data.tile7.nc /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/data/ic//sfc_data.nc
++ ln -sf /gpfs/f5/gfdl_w/scratch/Kun.Gao/SHiELD_INPUT/SHiELD_IC_v16/C768r10n4_atl_new//20240705.06Z_IC//gfs_data.tile7.nc /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/data/ic//gfs_data.nc
++ tcvital=/gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/data/vital//tcvitals.vi
+++ cat /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/data/vital//tcvitals.vi
+++ cut -c68-69
++ vmax_vit=51
++ '[' 1 -gt 0 ']'
++ ic_file_for_vi=/gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/data/ic//gfs_data_for_vi.nc
++ rm -rf /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/data/ic//gfs_data_for_vi.nc
++ srun --ntasks=1 /autofs/ncrc-svm1_home1/Kun.Gao/VI/HAFS_tools//sorc/hafs_tools.fd/exec_v2.5//hafs_datool.x hafsvi_create_nc --in_dir=/gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/data/ic/ --zsel=29 --out_file=/gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/data/ic//gfs_data_for_vi.nc
+ --- call hafsvi_create_nc/hafs_datool for /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/data/ic/
+---getting u_s : 2304 1153  128    1
+---getting v_s : 2304 1153  128    1
+---getting zh : 2304 1152  129    1
+---getting delp : 2304 1152  128    1
+---getting t : 2304 1152  128    1
+---getting sphum : 2304 1152  128    1
+---getting w : 2304 1152  128    1
+---getting vcoord :  129    2    1    1
+No such file or directory   wrong in open /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/data/ic//gfs_ctrl.nc
+NetCDF: Not a valid ID   wrong in nf90_inq_varid vcoord
+NetCDF: Not a valid ID   wrong in nf90_inquire_variablevcoord
+  !!!! please add    538006558  xtype data here 
++ prep_dir=/gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/atm_vi//prep_init
++ mkdir -p /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/atm_vi//prep_init
++ cd /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/atm_vi//prep_init
++ vortexradius=10
++ res=0.02
++ srun --ntasks=1 /autofs/ncrc-svm1_home1/Kun.Gao/VI/HAFS_tools//sorc/hafs_tools.fd/exec_v2.5//hafs_datool.x hafsvi_preproc_ic --in_dir=/gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/data/ic/ --debug_level=11 --interpolation_points=4 --infile_date=20240705.060000 --tcvital=/gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/data/vital//tcvitals.vi --vortexradius=10 --res=0.02 --nestdoms=0 --out_file=vi_inp_10deg0p02.bin
+hurricane center from obs is:     19.80    -86.20    971.00     26.24
+---vortex replacement info:   -86.20   19.80  10
+ --- call hafsvi_preproc_ic/hafs_datool for w
+---rot-ll grid: nx, ny, cen_lon, cen_lat, dlon, dlat, lon1, lon2, lat1, lat2
+                 501  501 -86.20000  19.80000   0.02000   0.02000  -5.00000   5.00000  -5.00000   5.00000
+ --- read grid info from /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/data/ic//grid_spec.nc
+  domain dims:     (1:1) --> (2304:1) --> (2304:1152) --> (1:1152)
+       T-cell: -17.45  34.83--->-102.55  34.83---> -93.89   5.51---> -26.11   5.51
+   grid_lont :-102.55: -17.45 grid_latt :   5.51:  43.37
+  domain dims:     (1:1) --> (2305:1) --> (2305:1153) --> (1:1153)
+             : -17.43  34.84--->-102.57  34.84---> -93.90   5.50---> -26.10   5.50
+   grid_lon  :-102.57: -17.43 grid_lat  :   5.50:  43.38
+ --- ingrid info:         2304         1152     -59.9641418      25.0324650     -59.9820862      25.0162334
+ --- call cal_src_dst_grid_weight
+           0 --- dstgrid:          501          501     -86.2197800      19.7799969
+---- processing t-cell: 501:501
+ ---    i     j        lon        lat
+ t:   250   250     -86.22      19.78
+ll bin size d_ll and max_points:      0.1000000        1080
+min lon for src dst min:   -102.5510864    -91.6847992   -103.0000000
+max lon for src dst max:    -17.4488831    -80.7151947    -16.3999996         867
+min lat for src dst min:      5.5128660     14.7239170      5.0000000
+max lat for src dst max:     43.3677444     24.7999992     44.2999992         394
+search grids:   -103.000-->   -16.400 :      5.000-->    44.300
+---sign src to ll grids
+---search nearest src grid for each dst grid
+---search_nearst_grid finished
+ ---    i     j        lon        lat          x          y m(i,j)_lon m(i,j)_lat 
+ t:   250   250
+    gwt%gwt_t @    250   250     4  1934  1933  1934  1935   672   673   673   673
+---- processing u-cell ----
+src grid_lat:     2305    1153    34.839    34.839     5.499     5.499
+src    u lat:     2304    1153    34.845    34.845     5.500     5.500
+src  grid range:-102.57: -17.43;    5.50:  43.38
+src u-grid range:-102.56: -17.44;    5.50:  43.38
+dst grid_lat:      501     501    14.724    14.724    24.719    24.719
+dst    u lat:      501     501    14.724    14.724    24.719    24.719
+dst  grid range: -91.68: -80.72;   14.72:  24.80
+dst u-grid range: -91.68: -80.72;   14.72:  24.80
+ll bin size d_ll and max_points:      0.1000000        1080
+min lon for src dst min:   -102.5558014    -91.6847992   -103.0000000
+max lon for src dst max:    -17.4441833    -80.7151947    -16.3999996         867
+min lat for src dst min:      5.5002108     14.7239170      5.0000000
+max lat for src dst max:     43.3831711     24.7999992     44.2999992         394
+search grids:   -103.000-->   -16.400 :      5.000-->    44.300
+---sign src to ll grids
+---search nearest src grid for each dst grid
+---search_nearst_grid finished
+ u:   250   250     -86.22      19.78       1934        674     -86.23      19.79
+---- processing v-cell ----
+ll bin size d_ll and max_points:      0.1000000        1080
+min lon for src dst min:   -102.5654449    -91.6847992   -103.0000000
+max lon for src dst max:    -17.4345398    -80.7151947    -16.3999996         867
+min lat for src dst min:      5.5120087     14.7239170      5.0000000
+max lat for src dst max:     43.3677444     24.7999992     44.2999992         394
+search grids:   -103.000-->   -16.400 :      5.000-->    44.300
+---sign src to ll grids
+---search nearest src grid for each dst grid
+---search_nearst_grid finished
+ v:   250   250     -86.22      19.78       1934        674     -86.21      19.77
+ --- record start cputime:   1      9.9159508
+NetCDF: Variable not found   wrong in nf90_inq_varid vcoord
+ nz is       -1000
+=== record1:    501   501 -1000
+ --- record start cputime:   2      9.9178467
+           0=== record2:   -5.000  -5.000   5.000   5.000 -86.200  19.800
+=== record2:   -5.000  -5.000   5.000   5.000 -86.200  19.800
+ ==== finished record 2 at            0
+ --- record start cputime:   3      9.9178658
+---getting vcoord : -999    2    1    1
+NetCDF: Variable not found   wrong in nf90_inq_varid vcoord
+NetCDF: Variable not found   wrong in nf90_inquire_variablevcoord
+  !!!! please add    538006558  xtype data here 
++ vortexradius=10
++ res=0.20
++ srun --ntasks=1 /autofs/ncrc-svm1_home1/Kun.Gao/VI/HAFS_tools//sorc/hafs_tools.fd/exec_v2.5//hafs_datool.x hafsvi_preproc_ic --in_dir=/gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/data/ic/ --debug_level=11 --interpolation_points=4 --infile_date=20240705.060000 --tcvital=/gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/data/vital//tcvitals.vi --vortexradius=10 --res=0.20 --nestdoms=0 --out_file=vi_inp_10deg0p20.bin
+hurricane center from obs is:     19.80    -86.20    971.00     26.24
+---vortex replacement info:   -86.20   19.80  10
+ --- call hafsvi_preproc_ic/hafs_datool for w
+---rot-ll grid: nx, ny, cen_lon, cen_lat, dlon, dlat, lon1, lon2, lat1, lat2
+                  51   51 -86.20000  19.80000   0.20000   0.20000  -5.00000   5.00000  -5.00000   5.00000
+ --- read grid info from /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/data/ic//grid_spec.nc
+  domain dims:     (1:1) --> (2304:1) --> (2304:1152) --> (1:1152)
+       T-cell: -17.45  34.83--->-102.55  34.83---> -93.89   5.51---> -26.11   5.51
+   grid_lont :-102.55: -17.45 grid_latt :   5.51:  43.37
+  domain dims:     (1:1) --> (2305:1) --> (2305:1153) --> (1:1153)
+             : -17.43  34.84--->-102.57  34.84---> -93.90   5.50---> -26.10   5.50
+   grid_lon  :-102.57: -17.43 grid_lat  :   5.50:  43.38
+ --- ingrid info:         2304         1152     -59.9641418      25.0324650     -59.9820862      25.0162334
+ --- call cal_src_dst_grid_weight
+           0 --- dstgrid:           51           51     -86.4121399      19.5998745
+---- processing t-cell: 51:51
+ ---    i     j        lon        lat
+ t:    25    25     -86.41      19.60
+ll bin size d_ll and max_points:      0.2900000        1920
+min lon for src dst min:   -102.5510864    -91.6847992   -104.0000000
+max lon for src dst max:    -17.4488831    -80.7151947    -15.3999996         306
+min lat for src dst min:      5.5128660     14.7239170      4.0000000
+max lat for src dst max:     43.3677444     24.7999992     45.2999992         143
+search grids:   -104.000-->   -15.550 :      4.000-->    45.180
+---sign src to ll grids
+---search nearest src grid for each dst grid
+---search_nearst_grid finished
+ ---    i     j        lon        lat          x          y m(i,j)_lon m(i,j)_lat 
+ t:    25    25
+    gwt%gwt_t @     25    25     4  1941  1940  1941  1942   677   678   678   678
+---- processing u-cell ----
+src grid_lat:     2305    1153    34.839    34.839     5.499     5.499
+src    u lat:     2304    1153    34.845    34.845     5.500     5.500
+src  grid range:-102.57: -17.43;    5.50:  43.38
+src u-grid range:-102.56: -17.44;    5.50:  43.38
+dst grid_lat:       51      51    14.724    14.724    24.719    24.719
+dst    u lat:       51      51    14.724    14.724    24.719    24.719
+dst  grid range: -91.68: -80.72;   14.72:  24.80
+dst u-grid range: -91.68: -80.72;   14.72:  24.80
+ll bin size d_ll and max_points:      0.2900000        1920
+min lon for src dst min:   -102.5558014    -91.6847992   -104.0000000
+max lon for src dst max:    -17.4441833    -80.7151947    -15.3999996         306
+min lat for src dst min:      5.5002108     14.7239170      4.0000000
+max lat for src dst max:     43.3831711     24.7999992     45.2999992         143
+search grids:   -104.000-->   -15.550 :      4.000-->    45.180
+---sign src to ll grids
+---search nearest src grid for each dst grid
+---search_nearst_grid finished
+ u:    25    25     -86.41      19.60       1941        679     -86.41      19.61
+---- processing v-cell ----
+ll bin size d_ll and max_points:      0.2900000        1920
+min lon for src dst min:   -102.5654449    -91.6847992   -104.0000000
+max lon for src dst max:    -17.4345398    -80.7151947    -15.3999996         306
+min lat for src dst min:      5.5120087     14.7239170      4.0000000
+max lat for src dst max:     43.3677444     24.7999992     45.2999992         143
+search grids:   -104.000-->   -15.550 :      4.000-->    45.180
+---sign src to ll grids
+---search nearest src grid for each dst grid
+---search_nearst_grid finished
+ v:    25    25     -86.41      19.60       1941        678     -86.40      19.62
+ --- record start cputime:   1     35.4939156
+NetCDF: Variable not found   wrong in nf90_inq_varid vcoord
+ nz is       -1000
+=== record1:     51    51 -1000
+ --- record start cputime:   2     35.4957619
+           0=== record2:   -5.000  -5.000   5.000   5.000 -86.200  19.800
+=== record2:   -5.000  -5.000   5.000   5.000 -86.200  19.800
+ ==== finished record 2 at            0
+ --- record start cputime:   3     35.4957809
+---getting vcoord : -999    2    1    1
+NetCDF: Variable not found   wrong in nf90_inq_varid vcoord
+NetCDF: Variable not found   wrong in nf90_inquire_variablevcoord
+  !!!! please add    538006558  xtype data here 
++ work_dir_split=/gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/atm_vi//split_init/
++ work_dir_pert=/gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/atm_vi//anl_pert_init/
++ work_dir_combine=/gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/atm_vi//anl_storm/
++ '[' 1 -gt 0 ']'
++ rm -rf /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/atm_vi//split_init/
++ mkdir -p /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/atm_vi//split_init/
++ cd /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/atm_vi//split_init/
++ ln -sf /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/data/vital//tcvitals.vi fort.11
++ '[' -e /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/data/vital//02L.2024070506.trak.atcfunix.all ']'
++ ln -sf /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/data/vital//02L.2024070506.trak.atcfunix.all ./trak.atcfunix.all
++ grep '^.., 02,' trak.atcfunix.all
++ ln -sf trak.atcfunix.tmp fort.12
++ ln -sf ./trak.fnl.all fort.30
++ ln -sf /autofs/ncrc-svm1_home1/Kun.Gao/VI/HAFS_tools//sorc/hafs_tools.fd/exec_v2.5//hafs_vi_create_trak_init.x ./
++ ./hafs_vi_create_trak_init.x 02L
+72HDAS240705 6  196  863  196  863  196  863  196  863  196  863  196  863  196  863   0   0   0   0   0   0 02L
++ ln -sf /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/data/vital//tcvitals.vi fort.11
++ ln -sf ./trak.fnl.all fort.30
++ ln -sf ../prep_init/vi_inp_10deg0p02.bin ./fort.26
++ ln -sf ../prep_init/vi_inp_10deg0p20.bin ./fort.46
++ ln -sf storm_env fort.56
++ ln -sf rel_inform fort.52
++ ln -sf vital_syn fort.55
++ ln -sf storm_pert fort.71
++ ln -sf storm_radius fort.85
++ ln -sf /autofs/ncrc-svm1_home1/Kun.Gao/VI/HAFS_tools//sorc/hafs_tools.fd/exec_v2.5//hafs_vi_split.x ./
++ echo 6 2 51 1 1.0
++ ./hafs_vi_split.x
+Have 256 OpenMP threads.
+ NX,NY,NZ,I360=         501         501       -1000         180
+forrtl: severe (24): end-of-file during read, unit 26, file /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work/2024070506/02L/atm_vi/split_init/fort.26
+Image              PC                Routine            Line        Source             
+hafs_vi_split.x    0000000020064FC8  Unknown               Unknown  Unknown
+hafs_vi_split.x    0000000020082AA0  Unknown               Unknown  Unknown
+hafs_vi_split.x    000000002000E520  MAIN__                    144  split.f90
+hafs_vi_split.x    000000002000B862  Unknown               Unknown  Unknown
+libc-2.31.so       00007F9D362F224D  __libc_start_main     Unknown  Unknown
+hafs_vi_split.x    000000002000B77A  Unknown               Unknown  Unknown
++ '[' 24 -eq 0 ']'
++ echo '=== VI split step failed'
+=== VI split step failed
++ '[' 1 -gt 0 ']'
++ rm -rf /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/atm_vi//anl_pert_init/
++ mkdir -p /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/atm_vi//anl_pert_init/
++ cd /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/atm_vi//anl_pert_init/
++ ln -sf /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/data/vital//tcvitals.vi fort.11
++ ln -sf ../prep_init/vi_inp_10deg0p02.bin fort.46
++ ln -sf /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/atm_vi//split_init//storm_env fort.26
++ ln -sf /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/atm_vi//split_init//storm_pert fort.71
++ ln -sf /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/atm_vi//split_init//storm_radius fort.65
++ ln -sf storm_pert_new fort.58
++ ln -sf storm_size_p fort.14
++ ln -sf storm_sym fort.23
++ ln -sf /autofs/ncrc-svm1_home1/Kun.Gao/VI/HAFS_tools//sorc/hafs_tools.fd/exec_v2.5//hafs_vi_anl_pert.x ./
++ echo 6 AL 0
++ ./hafs_vi_anl_pert.x
+forrtl: No such file or directory
+forrtl: severe (29): file not found, unit 26, file /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work/2024070506/02L/atm_vi/anl_pert_init/fort.26
+Image              PC                Routine            Line        Source             
+hafs_vi_anl_pert.  0000000020032218  Unknown               Unknown  Unknown
+hafs_vi_anl_pert.  000000002004DAA4  Unknown               Unknown  Unknown
+hafs_vi_anl_pert.  000000002000B3AF  MAIN__                    205  anl_pert.f90
+hafs_vi_anl_pert.  000000002000B0A2  Unknown               Unknown  Unknown
+libc-2.31.so       00007F84DFAF224D  __libc_start_main     Unknown  Unknown
+hafs_vi_anl_pert.  000000002000AFBA  Unknown               Unknown  Unknown
++ '[' 29 -eq 0 ']'
++ echo '=== VI anl_pert step failed'
+=== VI anl_pert step failed
++ '[' 1 -gt 0 ']'
++ rm -rf /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/atm_vi//anl_storm/
++ mkdir -p /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/atm_vi//anl_storm/
++ cd /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/atm_vi//anl_storm/
++ ln -sf /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/data/vital//tcvitals.vi fort.11
++ ln -sf ../prep_init/vi_inp_10deg0p02.bin ./fort.46
++ ln -sf /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/atm_vi//split_init//trak.atcfunix.tmp fort.12
++ ln -sf /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/atm_vi//split_init//trak.fnl.all fort.30
++ ln -sf /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/atm_vi//split_init//storm_env fort.26
++ ln -sf /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/atm_vi//split_init//storm_radius fort.85
++ ln -sf /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/atm_vi//anl_pert_init//storm_size_p fort.14
++ ln -sf /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/atm_vi//anl_pert_init//storm_sym fort.23
++ ln -sf /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/atm_vi//anl_pert_init//storm_pert_new fort.71
++ ln -sf storm_env_new fort.36
++ ln -sf storm_anl_combine fort.56
++ ln -sf /autofs/ncrc-svm1_home1/Kun.Gao/VI/HAFS_tools//sorc/hafs_tools.fd/exec_v2.5//hafs_vi_anl_combine.x ./
++ echo 6 AL 0 0
++ ./hafs_vi_anl_combine.x
+ ITIM,basin1,IGFS_FLAG,INITOPT=           6 AL           0           0
+ Obsereved Vmax:   vobs [m/s], DEPTH =   51.00000     D
+ Obsereved RMW:  Ir_vobs, VRmax [km] =          19   19.00000    
+ Obsereved R34: NE,SE,SW,NW,AVG [km] =         167         111          93
+         148   129.7500       167.0000    
+ Obsereved ROCI:   Irmax, PRmax [km] =         222   222.0000    
+ Obsereved Pressure: pmin, pout [Pa] =   97100.00       100800.0    
+forrtl: No such file or directory
+forrtl: severe (29): file not found, unit 26, file /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work/2024070506/02L/atm_vi/anl_storm/fort.26
+Image              PC                Routine            Line        Source             
+hafs_vi_anl_combi  0000000020041148  Unknown               Unknown  Unknown
+hafs_vi_anl_combi  000000002005C9D4  Unknown               Unknown  Unknown
+hafs_vi_anl_combi  000000002000BB3D  MAIN__                    237  anl_combine.f90
+hafs_vi_anl_combi  000000002000B162  Unknown               Unknown  Unknown
+libc-2.31.so       00007F37EDC3E24D  __libc_start_main     Unknown  Unknown
+hafs_vi_anl_combi  000000002000B07A  Unknown               Unknown  Unknown
++ '[' 29 -eq 0 ']'
++ echo '=== VI anl_combine step failed'
+=== VI anl_combine step failed
++ '[' -s storm_anl_combine ']'
++ '[' 1 -gt 0 ']'
++ cd /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/atm_vi//anl_storm/
++ '[' -s storm_env_new ']'
++ '[' 1 -gt 0 ']'
++ cp /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/data/ic//gfs_data_for_vi.nc /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/data/ic//gfs_data_after_vi.nc
++ srun --ntasks=8 /autofs/ncrc-svm1_home1/Kun.Gao/VI/HAFS_tools//sorc/hafs_tools.fd/exec_v2.5//hafs_datool.x hafsvi_postproc_ic --in_file=/gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/atm_vi//anl_storm/storm_anl --debug_level=11 --interpolation_points=4 --relaxzone=30 --infile_date=20240705.060000 --nestdoms=0 --out_dir=/gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/data/ic/
+ --- call hafsvi_postproc_ic/hafs_datool for /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/atm_vi//anl_storm/storm_anl
+ --- call hafsvi_postproc_ic/hafs_datool for /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/atm_vi//anl_storm/storm_anl
+ --- call hafsvi_postproc_ic/hafs_datool for /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/atm_vi//anl_storm/storm_anl
+ --- call hafsvi_postproc_ic/hafs_datool for /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/atm_vi//anl_storm/storm_anl
+ --- call hafsvi_postproc_ic/hafs_datool for /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/atm_vi//anl_storm/storm_anl
+ --- call hafsvi_postproc_ic/hafs_datool for /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/atm_vi//anl_storm/storm_anl
+ --- call hafsvi_postproc_ic/hafs_datool for /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/atm_vi//anl_storm/storm_anl
+ --- call hafsvi_postproc_ic/hafs_datool for /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/atm_vi//anl_storm/storm_anl
+forrtl: severe (24): end-of-file during read, unit 36, file /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/atm_vi//anl_storm/storm_anl
+Image              PC                Routine            Line        Source             
+hafs_datool.x      00000000200D3FE8  Unknown               Unknown  Unknown
+hafs_datool.x      0000000020102100  Unknown               Unknown  Unknown
+hafs_datool.x      00000000200A6D45  hafsvi_postproc_i          97  sub_hafsvi_postproc_ic.f90
+hafs_datool.x      00000000200C77B7  MAIN__                    223  hafs_datool.f90
+hafs_datool.x      000000002000C522  Unknown               Unknown  Unknown
+libc-2.31.so       00007F06F1CF224D  __libc_start_main     Unknown  Unknown
+hafs_datool.x      000000002000C43A  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 36, file /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/atm_vi//anl_storm/storm_anl
+Image              PC                Routine            Line        Source             
+hafs_datool.x      00000000200D3FE8  Unknown               Unknown  Unknown
+hafs_datool.x      0000000020102100  Unknown               Unknown  Unknown
+hafs_datool.x      00000000200A6D45  hafsvi_postproc_i          97  sub_hafsvi_postproc_ic.f90
+hafs_datool.x      00000000200C77B7  MAIN__                    223  hafs_datool.f90
+hafs_datool.x      000000002000C522  Unknown               Unknown  Unknown
+libc-2.31.so       00007F74360F224D  __libc_start_main     Unknown  Unknown
+hafs_datool.x      000000002000C43A  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 36, file /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/atm_vi//anl_storm/storm_anl
+Image              PC                Routine            Line        Source             
+hafs_datool.x      00000000200D3FE8  Unknown               Unknown  Unknown
+hafs_datool.x      0000000020102100  Unknown               Unknown  Unknown
+hafs_datool.x      00000000200A6D45  hafsvi_postproc_i          97  sub_hafsvi_postproc_ic.f90
+hafs_datool.x      00000000200C77B7  MAIN__                    223  hafs_datool.f90
+hafs_datool.x      000000002000C522  Unknown               Unknown  Unknown
+libc-2.31.so       00007F77DB0F224D  __libc_start_main     Unknown  Unknown
+hafs_datool.x      000000002000C43A  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 36, file /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/atm_vi//anl_storm/storm_anl
+Image              PC                Routine            Line        Source             
+hafs_datool.x      00000000200D3FE8  Unknown               Unknown  Unknown
+hafs_datool.x      0000000020102100  Unknown               Unknown  Unknown
+hafs_datool.x      00000000200A6D45  hafsvi_postproc_i          97  sub_hafsvi_postproc_ic.f90
+hafs_datool.x      00000000200C77B7  MAIN__                    223  hafs_datool.f90
+hafs_datool.x      000000002000C522  Unknown               Unknown  Unknown
+libc-2.31.so       00007F8C9EC3E24D  __libc_start_main     Unknown  Unknown
+hafs_datool.x      000000002000C43A  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 36, file /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/atm_vi//anl_storm/storm_anl
+Image              PC                Routine            Line        Source             
+hafs_datool.x      00000000200D3FE8  Unknown               Unknown  Unknown
+hafs_datool.x      0000000020102100  Unknown               Unknown  Unknown
+hafs_datool.x      00000000200A6D45  hafsvi_postproc_i          97  sub_hafsvi_postproc_ic.f90
+hafs_datool.x      00000000200C77B7  MAIN__                    223  hafs_datool.f90
+hafs_datool.x      000000002000C522  Unknown               Unknown  Unknown
+libc-2.31.so       00007F436E2F224D  __libc_start_main     Unknown  Unknown
+hafs_datool.x      000000002000C43A  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 36, file /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/atm_vi//anl_storm/storm_anl
+Image              PC                Routine            Line        Source             
+hafs_datool.x      00000000200D3FE8  Unknown               Unknown  Unknown
+hafs_datool.x      0000000020102100  Unknown               Unknown  Unknown
+hafs_datool.x      00000000200A6D45  hafsvi_postproc_i          97  sub_hafsvi_postproc_ic.f90
+hafs_datool.x      00000000200C77B7  MAIN__                    223  hafs_datool.f90
+hafs_datool.x      000000002000C522  Unknown               Unknown  Unknown
+libc-2.31.so       00007FA14843E24D  __libc_start_main     Unknown  Unknown
+hafs_datool.x      000000002000C43A  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 36, file /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/atm_vi//anl_storm/storm_anl
+Image              PC                Routine            Line        Source             
+hafs_datool.x      00000000200D3FE8  Unknown               Unknown  Unknown
+hafs_datool.x      0000000020102100  Unknown               Unknown  Unknown
+hafs_datool.x      00000000200A6D45  hafsvi_postproc_i          97  sub_hafsvi_postproc_ic.f90
+hafs_datool.x      00000000200C77B7  MAIN__                    223  hafs_datool.f90
+hafs_datool.x      000000002000C522  Unknown               Unknown  Unknown
+libc-2.31.so       00007F29EE6F224D  __libc_start_main     Unknown  Unknown
+hafs_datool.x      000000002000C43A  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 36, file /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/atm_vi//anl_storm/storm_anl
+Image              PC                Routine            Line        Source             
+hafs_datool.x      00000000200D3FE8  Unknown               Unknown  Unknown
+hafs_datool.x      0000000020102100  Unknown               Unknown  Unknown
+hafs_datool.x      00000000200A6D45  hafsvi_postproc_i          97  sub_hafsvi_postproc_ic.f90
+hafs_datool.x      00000000200C77B7  MAIN__                    223  hafs_datool.f90
+hafs_datool.x      000000002000C522  Unknown               Unknown  Unknown
+libc-2.31.so       00007F41FB0F224D  __libc_start_main     Unknown  Unknown
+hafs_datool.x      000000002000C43A  Unknown               Unknown  Unknown
+srun: error: c5n0471: tasks 0-7: Exited with exit code 24
+srun: Terminating StepId=135071477.3
++ cp /gpfs/f5/gfdl_w/scratch/Kun.Gao/SHiELD_INPUT/SHiELD_IC_v16/C768r10n4_atl_new//20240705.06Z_IC//gfs_data.tile7.nc /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/data/ic//gfs_data_vi.nc
++ srun --ntasks=1 /autofs/ncrc-svm1_home1/Kun.Gao/VI/HAFS_tools//sorc/hafs_tools.fd/exec_v2.5//hafs_datool.x hafsvi_update_nc --in_dir=/gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/data/ic/ --zsel=29 --out_file=/gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/data/ic//gfs_data_vi.nc
+ --- call hafsvi_update_nc/hafs_datool for /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/data/ic/
+  --- updating wind
+---getting u : 2304 1152  100    1
+---getting u : 2304 1152  100    1
+---getting u_w : 2305 1152  128    1
+---getting u_s : 2304 1153  128    1
+---getting v : 2304 1152  100    1
+---getting v : 2304 1152  100    1
+---getting v_w : 2305 1152  128    1
+---getting v_s : 2304 1153  128    1
+  --- updating delp                                              
+---getting delp : 2304 1152  100    1
+---getting delp : 2304 1152  100    1
+---getting delp : 2304 1152  128    1
+  --- updating t                                                 
+---getting t : 2304 1152  100    1
+---getting t : 2304 1152  100    1
+---getting t : 2304 1152  128    1
+  --- updating sphum                                             
+---getting sphum : 2304 1152  100    1
+---getting sphum : 2304 1152  100    1
+---getting sphum : 2304 1152  128    1
+ === finished hafsvi_update_nc /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/data/ic//gfs_data_vi.nc ===
++ module load cdo
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_sh_dbg=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Shell debugging restarted
++ unset __lmod_sh_dbg
++ return 0
++ mkdir -p /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/data/check
++ cd /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/data/check
++ cdo selvar,u_w -sellevel,128 /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/data/ic//gfs_data.nc u_before.nc
+cdo(1) sellevel: Process started
+cdo(1) sellevel: Processed 39820032 values from 16 variables over 1 timestep.
+cdo    selname: Processed 2655360 values from 15 variables over 1 timestep [0.37s 235MB].
++ cdo selvar,u_w -sellevel,128 /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/data/ic//gfs_data_vi.nc u_after.nc
+cdo(1) sellevel: Process started
+cdo(1) sellevel: Processed 39820032 values from 16 variables over 1 timestep.
+cdo    selname: Processed 2655360 values from 15 variables over 1 timestep [0.24s 235MB].
++ cdo selvar,sphum -sellevel,128 /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/data/ic//gfs_data.nc sphum_before.nc
+cdo(1) sellevel: Process started
+cdo(1) sellevel: Processed 39820032 values from 16 variables over 1 timestep.
+cdo    selname: Processed 2654208 values from 15 variables over 1 timestep [0.17s 235MB].
++ cdo selvar,sphum -sellevel,128 /gpfs/f5/gfdl_w/scratch/Kun.Gao/vi_work//2024070506/02L/data/ic//gfs_data_vi.nc sphum_after.nc
+cdo(1) sellevel: Process started
+cdo(1) sellevel: Processed 39820032 values from 16 variables over 1 timestep.
+cdo    selname: Processed 2654208 values from 15 variables over 1 timestep [0.17s 235MB].
+++ cdo -diff u_before.nc u_after.nc
+++ sed -n '/records differ$/p'
+++ tr -s ' '
+++ cut -f2 '-d '
+cdo    diff: Processed 5310720 values from 2 variables over 2 timesteps [0.08s 151MB].
++ testok1=
+++ cdo -diff sphum_before.nc sphum_after.nc
+++ sed -n '/records differ$/p'
+++ tr -s ' '
+++ cut -f2 '-d '
+cdo    diff: Processed 5308416 values from 2 variables over 2 timesteps [0.09s 151MB].
++ testok2=
++ '[' -eq 1 ']'
+/var/spool/slurmd/job135071477/slurm_script: line 360: [: -eq: unary operator expected
++ echo 'VI did not work'
+VI did not work
