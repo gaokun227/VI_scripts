@@ -26,7 +26,7 @@ def map_dvar_to_cgrid(dvar):
     dvar_s[:, 0,    :] = 0.5 *   dvar[:, 0,      :]
     dvar_s[:, ny,   :] = 0.5 *   dvar[:, ny-1,   :]
 
-    return dvar_w, dvar_s 
+    return dvar_w, dvar_s
 
 def selected_data_wind(xm, ym, u, v, deg_sel):
     scope = deg_sel*33

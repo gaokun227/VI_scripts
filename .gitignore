@@ -1,0 +1,5 @@
+*.pyc
+*.diff
+*.out
+*.log
+tc_vitals/
