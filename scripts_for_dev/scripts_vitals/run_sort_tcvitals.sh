@@ -7,8 +7,8 @@ set hh_list = (00 12)
 #set end=30
 #set int=1
 
-# 2024 0701-1030
-set initial=20240701
+# 0701-1030
+set initial=20250701
 set end=130
 set int=1
 

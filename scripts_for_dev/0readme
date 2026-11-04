@@ -1,0 +1,3 @@
+Step 1. run_sort_tcvitals.sh -> generate all tc vital files for desired date range
+Step 2. run_prepare_tc_files_for_xx.py -> generate model & obs tc record files for desired date range 
+Step 3. submit_vi_batch_xx.csh -> submit vi jobs
